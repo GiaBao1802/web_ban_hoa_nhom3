@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloomie - Tiệm hoa tươi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#" aria-label="Bloomie">
+        <span class="brand-mark">B</span>
+        <span>Bloomie</span>
+      </a>
+      <div class="nav-links" aria-label="Liên kết chính">
+        <a href="#products">Hoa tươi</a>
+        <a href="#about">Về chúng tôi</a>
+        <a href="#contact">Liên hệ</a>
+      </div>
+      <button class="cart-button" id="cartToggle" type="button" aria-label="Mở giỏ hàng">
+        <span>Giỏ hàng</span>
+        <strong id="cartCount">0</strong>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Hoa tươi mỗi ngày</p>
+        <h1>Bloomie</h1>
+        <p>Bó hoa tinh tế cho sinh nhật, kỷ niệm, khai trương và những ngày cần một điều thật đẹp.</p>
+        <a class="primary-action" href="#products">Chọn hoa ngay</a>
+      </div>
+    </section>
+
+    <section class="section intro" id="about">
+      <div>
+        <p class="eyebrow">Từ vườn đến tay bạn</p>
+        <h2>Những bó hoa gọn gàng, tươi lâu và dễ tặng.</h2>
+      </div>
+      <p>Bloomie chọn hoa theo mùa, phối màu nhẹ mắt và gói sẵn theo từng dịp. Giao diện này là web tĩnh thương mại cơ bản để bạn test deploy nhanh lên internet.</p>
+    </section>
+
+    <section class="section shop" id="products">
+      <div class="shop-toolbar">
+        <div>
+          <p class="eyebrow">Bộ sưu tập</p>
+          <h2>Chọn bó hoa yêu thích</h2>
+        </div>
+        <label class="search-box">
+          <span>Tìm kiếm</span>
+          <input id="searchInput" type="search" placeholder="Hoa hồng, tulip, lavender..." autocomplete="off">
+        </label>
+      </div>
+
+      <div class="category-tabs" id="categoryTabs" aria-label="Lọc danh mục"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div>
+        <p class="eyebrow">Đặt hoa nhanh</p>
+        <h2>Cần giao trong ngày?</h2>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Tên của bạn" aria-label="Tên của bạn">
+        <input type="tel" placeholder="Số điện thoại" aria-label="Số điện thoại">
+        <button type="submit">Gửi yêu cầu</button>
+      </form>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Giỏ hàng">
+    <div class="cart-panel">
+      <div class="cart-head">
+        <h2>Giỏ hàng</h2>
+        <button id="cartClose" type="button" aria-label="Đóng giỏ hàng">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-total">
+        <span>Tổng cộng</span>
+        <strong id="cartTotal">0đ</strong>
+      </div>
+      <button class="checkout-button" type="button">Thanh toán</button>
+    </div>
+  </aside>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
